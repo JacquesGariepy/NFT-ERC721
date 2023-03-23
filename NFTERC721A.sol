@@ -17,6 +17,6 @@ contract NFTERC721A is Ownable, ERC721A {
     function tokenURI(uint _tokenId) public view virtual override returns (string memory) {
         require(_exists(_tokenId), "URI query for nonexistent token");
 
-        return string(abi.encodePacked("", _tokenId.toString(), ".json"));
+        return string(abi.encodePacked("ipfs://lkjlkjlkjlkjljlkkljkllkjlkjklj/", _tokenId.toString(), ".json"));
     }
 }

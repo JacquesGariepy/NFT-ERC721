@@ -5,7 +5,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/Strings.sol";
 import "./ERC721A.sol";
 
-contract NFTIsERC721A is Ownable, ERC721A {
+contract NFTERC721A is Ownable, ERC721A {
     using Strings for uint;
 
     constructor() ERC721A("Jackboy70", "JCK") {}
